@@ -8,14 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#000022] min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-3xl">
-        <img src="image_cover.jpg" alt="13th ASEAN Ministerial Meeting Poster"
-            class="w-full h-auto rounded-lg shadow-lg" />
-        <div class="bg-yellow-300 text-black mt-4 p-4 rounded-lg text-center text-base sm:text-lg">
-            "The registration link will be updated shortly. Please check back soon."
-        </div>
-    </div>
+<body class="bg-[#000022] m-0 p-0">
+    <!-- Desktop image (shown on medium screens and above) -->
+    <img src="desktop.png" alt="Desktop version poster" class="hidden md:block w-screen h-screen object-cover" />
+
+    <!-- Mobile image (shown on small screens) -->
+    <img src="mobile.png" alt="Mobile version poster" class="block md:hidden w-screen h-screen object-cover" />
 </body>
 
 </html>

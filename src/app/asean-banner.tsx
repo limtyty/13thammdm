@@ -2,7 +2,9 @@ import Image from "next/image"
 
 export default function Component() {
     return (
-        <div className="relative w-full h-screen overflow-hidden bg-[#001630]">
+        <div style={{
+            background: 'radial-gradient(circle at center, #3b82f6 0%, #192946 100%)',
+        }} className="relative w-full h-screen overflow-hidden  ">
 
             {/* Main Grid Layout */}
             <div className="grid grid-cols-1 gap-4 sm:gap-6 justify-items-center content-start h-full px-4 sm:px-8 text-center">
@@ -29,9 +31,9 @@ export default function Component() {
                 </div>
 
                 {/* Event details */}
-                <div className="z-2  lg:bg-sky-950 backdrop-blur-sm border lg:border-white/20 rounded-lg p-2 ">
+                <div className="z-2  lg:bg-sky-950 backdrop-blur-sm lg:border lg:border-white/20 rounded-lg p-2 ">
                     <div className=" z-2 text-sm sm:text-lg md:text-xl lg:text-2xl  lg:text-white text-shadow-lg text-white font-semibold">
-                        13-15 OCTOBER 2025 | PHNOM PENH, CAMBODIA
+                        20- OCTOBER 2025 | PHNOM PENH, CAMBODIA
                     </div>
                 </div>
 
@@ -45,7 +47,8 @@ export default function Component() {
 
             {/* Bottom cityscape silhouette */}
             <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-48">
-                <img src="background.png" alt="" className="z-0 absolute bottom-0 right-0 max-h-[620px]" />
+                <img src="background.png" alt="" className="hidden sm:block z-0 absolute bottom-0 right-0 max-h-[620px]" />
+                <img src="bg-mobile.png" alt="" className="block sm:hidden z-0 absolute bottom-0 mx-auto" />
 
                 {/* Water reflection effect
                 <div className="absolute bottom-0 left-0 right-0 h-8 sm:h-16 bg-gradient-to-t from-cyan-400/20 to-transparent"></div>

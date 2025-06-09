@@ -36,7 +36,7 @@ export default function Component() {
                 </div>
 
                 {/* Registration note */}
-                <div className="z-1 lg:bg-amber-200 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3  mt-20">
+                <div className="z-1 lg:bg-amber-200 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3  mt-5">
                     <p className="lg:text-black text-white font-bold text-sm sm:text-xl ">
                         The registration link will be updated shortly. Please come back soon.
                     </p>
@@ -45,11 +45,11 @@ export default function Component() {
 
             {/* Bottom cityscape silhouette */}
             <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-48">
-                <img src="background.png" alt="" className="z-0 absolute bottom-0 left-0 right-0" />
+                <img src="background.png" alt="" className="z-0 absolute bottom-0 right-0 max-h-[620px]" />
 
-                {/* Water reflection effect */}
+                {/* Water reflection effect
                 <div className="absolute bottom-0 left-0 right-0 h-8 sm:h-16 bg-gradient-to-t from-cyan-400/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 h-4 sm:h-8 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-4 sm:h-8 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div> */}
             </div>
         </div>
     )
